@@ -15,9 +15,9 @@ fetch("events.json")
     let marker = L.marker([event.lat,event.lng]).addTo(map);
 
     marker.bindPopup(
-      "<b>"+event.title+"</b><br>"+event.description+
-      "<br><img src='"+event.image+"' width='200'>"
-    );
+"<b>"+event.title+"</b><br>"+event.description+
+"<br><img src='GE9XROIXgAAFYZA.jpg' width='200'>"
+);
 
     let li = document.createElement("li");  // ⚠️ ligne manquante
 
