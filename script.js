@@ -10,8 +10,10 @@ fetch("events.json")
   let list = document.getElementById("eventList");
   events.forEach(event => {
     let marker = L.marker([event.lat,event.lng]).addTo(map);
-    marker.bindPopup("<b>"+event.title+"</b><br>"+event.description);
-    let li = document.createElement("li");
+   marker.bindPopup(
+"<b>"+event.title+"</b><br>"+event.description+
+"<br><img src='GE9XROIXgAAFYZA.jpg' width='200'>"
+);
     li.innerHTML = "<b>"+event.title+"</b><br>"+event.description;
     li.onclick = () =>{
       map.setView([event.lat,event.lng],10);
