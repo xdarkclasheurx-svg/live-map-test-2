@@ -1,0 +1,20 @@
+[
+  {
+    "title":"Explosion reported",
+    "lat":50.4501,
+    "lng":30.5234,
+    "description":"Explosion heard in city center"
+  },
+  {
+    "title":"Military movement",
+    "lat":49.9935,
+    "lng":36.2304,
+    "description":"Vehicles seen moving north"
+  },
+  {
+    "title":"Drone sighting",
+    "lat":48.3794,
+    "lng":31.1656,
+    "description":"Drone spotted by locals"
+  }
+]

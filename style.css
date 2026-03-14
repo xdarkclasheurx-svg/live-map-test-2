@@ -1,0 +1,22 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+.container{
+  display:flex;
+  height:100vh;
+}
+.sidebar{
+  width:300px;
+  background:#111;
+  color:white;
+  padding:10px;
+  overflow:auto;
+}
+.sidebar li{
+  cursor:pointer;
+  margin-bottom:10px;
+}
+#map{
+  flex:1;
+}
