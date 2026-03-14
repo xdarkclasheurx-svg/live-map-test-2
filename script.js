@@ -7,18 +7,29 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 fetch("events.json")
 .then(res => res.json())
 .then(events => {
+
   let list = document.getElementById("eventList");
+
   events.forEach(event => {
+
     let marker = L.marker([event.lat,event.lng]).addTo(map);
-   marker.bindPopup(
-"<b>"+event.title+"</b><br>"+event.description+
-"<br><img src='"+event.image+"' width='200'>"
-);
+
+    marker.bindPopup(
+      "<b>"+event.title+"</b><br>"+event.description+
+      "<br><img src='"+event.image+"' width='200'>"
+    );
+
+    let li = document.createElement("li");  // ⚠️ ligne manquante
+
     li.innerHTML = "<b>"+event.title+"</b><br>"+event.description;
+
     li.onclick = () =>{
       map.setView([event.lat,event.lng],10);
       marker.openPopup();
     };
+
     list.appendChild(li);
+
   });
+
 });
